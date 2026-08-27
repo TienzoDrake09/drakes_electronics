@@ -17,3 +17,33 @@
         <li>Phone: (555) 123-4567</li>
     </ul>
 </main>
+
+<form>
+  <fieldset>
+    <legend>Contact Form</legend>
+  <p>
+    <label for="name">Your name</label><br>
+    <input type="text" id="name" name="name">
+  </p>
+  <p>
+    <label for="email">Your email</label><br>
+    <input type="email" id="email" name="email">
+  </p>
+  </fieldset>
+  <fieldset>
+    <legend>Inquiry Details</legend>
+  <p>
+    <label for="subject">Subject:</label>
+    <select id="subject" name="subject">
+      <option value="product-inquiry">Product Inquiry</option>
+      <option value="shipment-status-inquiry">Shipment Status Inquiry</option>
+      <option value="support-request">Support Request</option>
+      <option value="other-concerns">Other Concerns</option>
+    </select>
+  </p>
+
+  <label for="message">Your Message:</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+  </fieldset>
+  <button type="submit">Submit Inquiry</button>
+</form>
