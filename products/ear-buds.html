@@ -35,3 +35,58 @@
     </tr>
 </table>
 </main>
+
+<form>
+  <fieldset>
+    <legend>Order Form</legend>
+  <p>
+    <label for="name">Your name</label><br>
+    <input type="text" id="name" name="name" required>
+  </p>
+  <p>
+    <label for="number">Your Phone Number</label><br>
+    <input type="tel" id="number" name="number" required>
+  </p>
+  <p>
+    <label for="email">Your email</label><br>
+    <input type="email" id="email" name="email" required>
+  </p>
+  </fieldset>
+  <fieldset>
+    <legend>Order Details</legend>
+    <p>
+    <label for="Amount">Quantity:</label><br>
+    <input type="number" id="Amount" name="Amount" min="1" max="20" value="1" required>
+    </p>
+    <p>
+    <label for="color">Color:</label><br>
+    <select id="color" name="color" required>
+      <option value="black">Black</option>
+      <option value="white">White</option>
+    </select>
+    <label for="message">Your Message:</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+
+    <p>Add Ons</p>
+    <Input type="checkbox" id="gift-wrapped" name="gift-wrapped" value="gift-wrapped">
+        <label for="gift-wrapped">Gift Wrapped</label><br>
+    <Input type="checkbox" id="extended-warranty" name="extended-warranty" value="extended-warranty">
+        <label for="extended-warranty">Extended Warranty</label><br>
+    
+  </fieldset>
+  
+  </p>
+    </fieldset>
+    <fieldset>
+    <legend>Logistics Information</legend>
+  <p>
+    <label for="payment">Payment Method:</label>
+    <select id="payment" name="payment" required>
+      <option value="credit-card">Credit Card</option>
+      <option value="debit-card">Debit Card</option>
+      <option value="paypal">PayPal</option>
+      <option value="cash-on-delivery">Cash on Delivery</option>
+    </select>
+  </p>
+     <button type="submit">Submit Inquiry</button>
+</form>
