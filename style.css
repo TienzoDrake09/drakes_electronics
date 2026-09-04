@@ -132,13 +132,3 @@ footer {
   outline: 3px solid var(--brand);
   outline-offset: 2px;
 }
-
-/* Optional card layout */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
-
-/* ===== 5. Utilities ===== */
-.text-center { text-align: center; }
