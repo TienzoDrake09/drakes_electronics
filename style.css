@@ -39,7 +39,7 @@ nav a {
 }
 
 nav ul {
-  display: flex;
+  display: inline-block;
   gap: 1.5rem;
   margin: 0;
   padding: 0;
@@ -52,7 +52,7 @@ nav a {
 }
 
 nav a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 main {
