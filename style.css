@@ -73,12 +73,17 @@ footer {
 }
 
 /* ===== 4. Components ===== */
-.card {
+.product-card {
   background: var(--paper);
-  border: 1px solid #dfe5df;
+  border-left: 5px solid var(--brand);
   border-radius: 0.75rem;
-  padding: 1.5rem;
-  box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+  padding: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.product-card .product-name {
+  font-size: 1.4rem;
+  color: var(--brand);
 }
 
 .button {
