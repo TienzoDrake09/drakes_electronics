@@ -106,7 +106,7 @@ footer {
   border-radius: 0.75rem;
 }
 
-.contact-form legend {
+.contact-form fieldset > legend {
   color: var(--brand);
   font-weight: bold;
 }
