@@ -40,10 +40,13 @@ nav a {
 
 nav ul {
   display: inline-block;
-  gap: 1.5rem;
   margin: 0;
-  padding: 0;
-  list-style: none;
+  padding: 0; 
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
 }
 
 nav a {
