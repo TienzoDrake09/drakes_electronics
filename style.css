@@ -101,6 +101,38 @@ footer {
   filter: brightness(0.9);
 }
 
+.contact-form fieldset {
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.contact-form legend {
+  color: var(--brand);
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+}
+
+.contact-form button[type="submit"] {
+  background: var(--brand);
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+}
+
 /* Optional card layout */
 .card-grid {
   display: grid;
