@@ -118,6 +118,17 @@ footer {
   padding: 0.75rem;
 }
 
+.contact-form input[type="checkbox"] {
+  width: auto;
+  padding: 0;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+.contact-form input[type="checkbox"] + label {
+  display: inline;
+}
+
 .contact-form button[type="submit"] {
   background: var(--brand);
   color: white;
