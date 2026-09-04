@@ -1,0 +1,87 @@
+/* ===== 1. Variables ===== */
+:root {
+  --brand: hsl(225, 59%, 50%);
+  --ink: #1C2420;
+  --muted: #5D665C;
+  --paper: #F7F9F6;
+}
+
+/* ===== 2. Base / reset ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+/* ===== 3. Layout regions ===== */
+header {
+  background: var(--brand);
+  color: white;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 70vh;
+}
+
+footer {
+  background: var(--ink);
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+/* ===== 4. Components ===== */
+.card {
+  background: var(--paper);
+  border: 1px solid #dfe5df;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+}
+
+.button {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  border: 0;
+  border-radius: 0.4rem;
+  background: var(--brand);
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover {
+  filter: brightness(0.9);
+}
+
+/* Optional card layout */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ===== 5. Utilities ===== */
+.text-center { text-align: center; }
