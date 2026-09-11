@@ -25,28 +25,24 @@ header {
   padding: 1rem 2rem;
 }
 
-nav {
+.site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 1rem;
+.site-header nav ul {
+  display: flex;
+  gap: 20px;
 }
 
 nav ul {
-  display: inline-block;
   margin: 0;
   padding: 0; 
 }
 
 nav li {
-  display: inline-block;
-  margin-right: 1rem;
+  list-style: none;
 }
 
 nav a {
@@ -55,7 +51,7 @@ nav a {
 }
 
 nav a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 main {
