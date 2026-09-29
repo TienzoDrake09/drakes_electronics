@@ -19,12 +19,13 @@ body {
   min-height: 100vh;
   padding: 16px;
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
-  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto max-content max-content auto;
   grid-template-areas:
-    "masthead masthead"
-    "side main"
-    "foot foot";
+    "masthead"
+    "main"
+    "side"
+    "foot";
   gap: 16px;
 }
 
@@ -54,13 +55,15 @@ aside a {
 
 .site-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .site-header nav ul {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 nav ul {
@@ -86,7 +89,7 @@ main {
   min-width: 0;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   min-height: 70vh;
 }
 
@@ -103,30 +106,29 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 700px) {
+@media (min-width: 700px) {
   body {
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 220px minmax(0, 1fr);
+    grid-template-rows: auto max-content auto;
     grid-template-areas:
-      "masthead"
-      "side"
-      "main"
-      "foot";
+      "masthead masthead"
+      "side main"
+      "foot foot";
   }
 
   .site-header {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.75rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
   }
 
   .site-header nav ul {
-    flex-wrap: wrap;
-    gap: 12px;
+    gap: 20px;
   }
 
   main {
-    padding: 1rem;
+    padding: 2rem;
+    min-height: 0;
   }
 }
 
