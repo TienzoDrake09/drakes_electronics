@@ -16,13 +16,40 @@ body {
   font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
   line-height: 1.5;
   color: var(--ink);
+  min-height: 100vh;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "masthead masthead"
+    "side main"
+    "foot foot";
+  gap: 16px;
 }
 
 /* ===== 3. Layout regions ===== */
 header {
+  grid-area: masthead;
   background: var(--brand);
   color: white;
   padding: 1rem 2rem;
+}
+
+aside {
+  grid-area: side;
+  padding: 1.5rem;
+  background: var(--paper);
+  border-left: 5px solid var(--brand);
+}
+
+aside ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+aside a {
+  color: var(--brand);
 }
 
 .site-header {
@@ -55,17 +82,52 @@ nav a:hover {
 }
 
 main {
+  grid-area: main;
+  min-width: 0;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
   min-height: 70vh;
 }
 
+main img {
+  max-width: 100%;
+  height: auto;
+}
+
 footer {
+  grid-area: foot;
   background: var(--ink);
   color: white;
   padding: 1.5rem 2rem;
   text-align: center;
+}
+
+@media (max-width: 700px) {
+  body {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+      "masthead"
+      "side"
+      "main"
+      "foot";
+  }
+
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .site-header nav ul {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  main {
+    padding: 1rem;
+  }
 }
 
 /* ===== 4. Components ===== */

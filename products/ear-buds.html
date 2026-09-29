@@ -11,85 +11,91 @@
   </div>
 </header>
 <link rel="stylesheet" href="../style.css">
+<aside>
+  <h2>Browse</h2>
+  <ul>
+    <li><a href="../index.html">Featured products</a></li>
+    <li><a href="../about.html">About Drake's</a></li>
+    <li><a href="../contact.html">Get in touch</a></li>
+  </ul>
+</aside>
 <main>
-<h1>Ear Buds</h1>
-<img src="https://sc01.alicdn.com/kf/HTB1.pkmlnZmx1VjSZFGq6yx2XXaC.jpg" alt="Ear Buds(Black)" width="400">
-<p>These earbuds offer excellent sound quality and a comfortable fit for extended listening sessions. 
-    They are perfect for music lovers and athletes alike. With their sleek design and powerful performance, 
-    these earbuds are a great choice for anyone who wants to enjoy their music on the go. Enjoy your favorite 
+  <h1>Ear Buds</h1>
+  <img src="https://sc01.alicdn.com/kf/HTB1.pkmlnZmx1VjSZFGq6yx2XXaC.jpg" alt="Ear Buds(Black)" width="400">
+  <p>These earbuds offer excellent sound quality and a comfortable fit for extended listening sessions.
+    They are perfect for music lovers and athletes alike. With their sleek design and powerful performance,
+    these earbuds are a great choice for anyone who wants to enjoy their music on the go. Enjoy your favorite
     tunes wherever you are! With 20 hours of battery life, you can listen to your favorite tracks all day long.
-</p>
-<table>
+  </p>
+  <table>
     <tr>
-        <th>Color</th>
-        <th>Price</th>
-        <th>Rating</th>
+      <th>Color</th>
+      <th>Price</th>
+      <th>Rating</th>
     </tr>
     <tr>
-        <th>Black</th>
-        <th>$19.99</th>
-        <th>4.5/5</th>
+      <td>Black</td>
+      <td>$19.99</td>
+      <td>4.5/5</td>
     </tr>
     <tr>
-        <th>White</th>
-        <th>$19.99</th>
-        <th>4.5/5</th>
+      <td>White</td>
+      <td>$19.99</td>
+      <td>4.5/5</td>
     </tr>
-</table>
-</main>
-
-<form class="contact-form">
-  <fieldset>
-    <legend>Order Form</legend>
-  <p>
-    <label for="name">Your name</label><br>
-    <input type="text" id="name" name="name" required>
-  </p>
-  <p>
-    <label for="number">Your Phone Number</label><br>
-    <input type="tel" id="number" name="number" required>
-  </p>
-  <p>
-    <label for="email">Your email</label><br>
-    <input type="email" id="email" name="email" required>
-  </p>
-  </fieldset>
-  <fieldset>
-    <legend>Order Details</legend>
-    <p>
-    <label for="Amount">Quantity:</label><br>
-    <input type="number" id="Amount" name="Amount" min="1" max="20" value="1" required>
-    </p>
-    <p>
-    <label for="color">Color:</label><br>
-    <select id="color" name="color" required>
-      <option value="black">Black</option>
-      <option value="white">White</option>
-    </select>
-    <br>
-    <label for="message">Your Message:</label>
-  <textarea id="message" name="message" rows="5" required></textarea>
-
-    <p>Add Ons</p>
-    <input type="checkbox" id="gift-wrapped" name="gift-wrapped" value="gift-wrapped">
-        <label for="gift-wrapped">Gift Wrapped</label><br>
-    <input type="checkbox" id="extended-warranty" name="extended-warranty" value="extended-warranty">
-        <label for="extended-warranty">Extended Warranty</label><br>
-    
-  </fieldset>
-  
-  </p>
+  </table>
+  <form class="contact-form">
+    <fieldset>
+      <legend>Order Form</legend>
+      <p>
+        <label for="name">Your name</label><br>
+        <input type="text" id="name" name="name" required>
+      </p>
+      <p>
+        <label for="number">Your Phone Number</label><br>
+        <input type="tel" id="number" name="number" required>
+      </p>
+      <p>
+        <label for="email">Your email</label><br>
+        <input type="email" id="email" name="email" required>
+      </p>
     </fieldset>
     <fieldset>
-    <legend>Logistics Information</legend>
-  <p>
-    <label for="payment">Payment Method:</label>
-    <select id="payment" name="payment" required>
-      <option value="credit-card">Credit Card</option>
-      <option value="debit-card">Debit Card</option>
-      <option value="paypal">PayPal</option>
-      <option value="cash-on-delivery">Cash on Delivery</option>
-    </select>
-  </p>
-     <button type="submit">Submit Inquiry</button>
-</form>
+      <legend>Order Details</legend>
+      <p>
+        <label for="Amount">Quantity:</label><br>
+        <input type="number" id="Amount" name="Amount" min="1" max="20" value="1" required>
+      </p>
+      <p>
+        <label for="color">Color:</label><br>
+        <select id="color" name="color" required>
+          <option value="black">Black</option>
+          <option value="white">White</option>
+        </select>
+      </p>
+      <p>
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </p>
+      <p>Add Ons</p>
+      <input type="checkbox" id="gift-wrapped" name="gift-wrapped" value="gift-wrapped">
+      <label for="gift-wrapped">Gift Wrapped</label><br>
+      <input type="checkbox" id="extended-warranty" name="extended-warranty" value="extended-warranty">
+      <label for="extended-warranty">Extended Warranty</label><br>
+    </fieldset>
+    <fieldset>
+      <legend>Logistics Information</legend>
+      <p>
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment" required>
+          <option value="credit-card">Credit Card</option>
+          <option value="debit-card">Debit Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="cash-on-delivery">Cash on Delivery</option>
+        </select>
+      </p>
+      <button type="submit">Submit Inquiry</button>
+    </fieldset>
+  </form>
+</main>
+<footer>Drake's Electronics</footer>

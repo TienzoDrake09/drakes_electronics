@@ -11,6 +11,14 @@
   </div>
 </header>
 <link rel="stylesheet" href="style.css">
+<aside>
+  <h2>Browse</h2>
+  <ul>
+    <li><a href="index.html">Featured products</a></li>
+    <li><a href="products/ear-buds.html">Ear Buds</a></li>
+    <li><a href="about.html">About Drake's</a></li>
+  </ul>
+</aside>
 <main>
   <h1>Contact Us</h1>
   <p>We'd love to hear from you! Get in touch with us!:</p>
@@ -18,34 +26,34 @@
         <li>Email: customer_service@drakeselectronics.com</li>
         <li>Phone: (555) 123-4567</li>
     </ul>
+  <form class="contact-form">
+    <fieldset>
+      <legend>Contact Form</legend>
+      <p>
+        <label for="name">Your name</label><br>
+        <input type="text" id="name" name="name" required>
+      </p>
+      <p>
+        <label for="email">Your email</label><br>
+        <input type="email" id="email" name="email" required>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Inquiry Details</legend>
+      <p>
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" required>
+          <option value="product-inquiry">Product Inquiry</option>
+          <option value="shipment-status-inquiry">Shipment Status Inquiry</option>
+          <option value="support-request">Support Request</option>
+          <option value="other-concerns">Other Concerns</option>
+        </select>
+      </p>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </fieldset>
+    <button type="submit">Submit Inquiry</button>
+  </form>
 </main>
-
-<form class="contact-form">
-  <fieldset>
-    <legend>Contact Form</legend>
-  <p>
-    <label for="name">Your name</label><br>
-    <input type="text" id="name" name="name" required>
-  </p>
-  <p>
-    <label for="email">Your email</label><br>
-    <input type="email" id="email" name="email" required>
-  </p>
-  </fieldset>
-  <fieldset>
-    <legend>Inquiry Details</legend>
-  <p>
-    <label for="subject">Subject:</label>
-    <select id="subject" name="subject" required>
-      <option value="product-inquiry">Product Inquiry</option>
-      <option value="shipment-status-inquiry">Shipment Status Inquiry</option>
-      <option value="support-request">Support Request</option>
-      <option value="other-concerns">Other Concerns</option>
-    </select>
-  </p>
-
-  <label for="message">Your Message:</label>
-  <textarea id="message" name="message" rows="5" required></textarea>
-  </fieldset>
-  <button type="submit">Submit Inquiry</button>
-</form>
+<footer>Drake's Electronics</footer>
