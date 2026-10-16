@@ -37,6 +37,7 @@
     these earbuds are a great choice for anyone who wants to enjoy their music on the go. Enjoy your favorite
     tunes wherever you are! With 20 hours of battery life, you can listen to your favorite tracks all day long.
   </p>
+  <p id="stock-status" aria-live="polite"></p>
   <table>
     <tr>
       <th>Color</th>
@@ -69,6 +70,11 @@
         <label for="email">Your email</label><br>
         <input type="email" id="email" name="email" required>
       </p>
+      <p>
+        <input type="checkbox" id="member" name="member" value="member">
+        <label for="member">Member</label><br>
+        <button type="button" id="member-check" class="button" hidden>Check</button>
+      </p>
     </fieldset>
     <fieldset>
       <legend>Order Details</legend>
@@ -96,6 +102,8 @@
     <fieldset>
       <legend>Logistics Information</legend>
       <p id="order-total" aria-live="polite">Order total: $19.99</p>
+      <p id="delivery-fee" aria-live="polite">Delivery fee: $20.00</p>
+      <p id="final-total" aria-live="polite">Final total: $39.99</p>
       <p>
         <label for="payment">Payment Method:</label>
         <select id="payment" name="payment" required>

@@ -163,6 +163,10 @@ footer {
   text-decoration: none;
 }
 
+.button[hidden] {
+  display: none;
+}
+
 .button:hover {
   filter: brightness(0.9);
 }
