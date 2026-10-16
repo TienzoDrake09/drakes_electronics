@@ -9,7 +9,7 @@
 <body>
 <header>
   <div class="site-header">
-    <h1>Drake's Electronics</h1>
+    <h1 id="shop-name">Drake's Electronics</h1>
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -89,12 +89,13 @@
       </p>
       <p>Add Ons</p>
       <input type="checkbox" id="gift-wrapped" name="gift-wrapped" value="gift-wrapped">
-      <label for="gift-wrapped">Gift Wrapped</label><br>
+      <label for="gift-wrapped">Gift Wrapped (+$2 per item)</label><br>
       <input type="checkbox" id="extended-warranty" name="extended-warranty" value="extended-warranty">
-      <label for="extended-warranty">Extended Warranty</label><br>
+      <label for="extended-warranty">Extended Warranty (+$10 per item)</label><br>
     </fieldset>
     <fieldset>
       <legend>Logistics Information</legend>
+      <p id="order-total" aria-live="polite">Order total: $19.99</p>
       <p>
         <label for="payment">Payment Method:</label>
         <select id="payment" name="payment" required>
@@ -108,6 +109,7 @@
     </fieldset>
   </form>
 </main>
-<footer>Drake's Electronics</footer>
+<footer id="site-footer">Drake's Electronics</footer>
+<script src="../script.js"></script>
 </body>
 </html>
